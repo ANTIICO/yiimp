@@ -214,6 +214,7 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 	}
 
 	if(strcmp(coind->symbol, "SIB") == 0 ||
+	   	strcmp(coind->symbol, "ARC") == 0 || // arcticcore
 		strcmp(coind->symbol, "MUE") == 0 || // MUEcore-x11
 		strcmp(coind->symbol, "VIVO") == 0 || // VIVO coin
 	   	strcmp(coind->symbol, "INN") == 0 || // Innova coin
