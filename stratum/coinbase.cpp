@@ -271,8 +271,8 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 		char script_payee[128] = { 0 };
 		char payees[4];
 		int npayees = 1;
-		bool masternode_enabled = json_get_bool(json_result, "goldminenode_payments_enforced");
-		bool superblocks_enabled = json_get_bool(json_result, "superblocks_enabled");
+		bool masternode_enabled = json_get_bool(json_result, "goldminenode_payments_started");
+		bool superblocks_enabled = json_get_bool(json_result, "superblocks_started");
 		json_value* superblock = json_get_array(json_result, "superblock");
 		json_value* masternode = json_get_object(json_result, "goldminenode");
 		if(superblocks_enabled && superblock) {
